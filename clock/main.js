@@ -11,9 +11,10 @@ function setTime() {
 	const date = time.getDate();
 	const hours = (time.getHours() + 24) % 12 || 12;
 	const minutes = time.getMinutes();
+	const seconds = time.getSeconds();
 	const year = time.getFullYear();
 
-	timeEl.textContent = `${hours < 10 ? `0${hours}` : hours} : ${minutes < 10 ? `0${minutes}` : minutes}`
+	timeEl.textContent = `${hours < 10 ? `0${hours}` : hours} : ${minutes < 10 ? `0${minutes}` : minutes} : ${seconds < 10 ? `0${seconds}` : seconds}`
 	dateEl.textContent = `${days[day]}, ${months[month]} ${date} , ${year}`
 }
 setTime();
