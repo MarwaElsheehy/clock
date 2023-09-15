@@ -12,11 +12,9 @@ body {
 .container {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	align-items: center;
-	position: relative;
-	padding: 50px;
-	width: 350px;
+	padding: 60px;
+	width: 450px;
 	border-radius: 15px;
 	color: #fff;
 	background: linear-gradient(180deg, #008080, #222);
